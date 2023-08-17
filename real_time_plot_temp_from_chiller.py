@@ -36,5 +36,7 @@ while True:
   except KeyboardInterrupt:
     print ('exiting')
     ser.close()
+    if len(sys.argv) ==2: 
+      f.close()
     break
 exit()
