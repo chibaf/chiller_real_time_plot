@@ -29,7 +29,7 @@ while True:
     temps.insert(0,float(temp)) # add element to the first position
     if len(sys.argv) ==2: # write data to file
       f.write(str(temps[0])+"\n")    
-    print(str(temps[0])+"\n")      
+    print(str(temps[0]))      
     plt.clf()
     plt.plot(x,temps)
     plt.pause(0.1)
