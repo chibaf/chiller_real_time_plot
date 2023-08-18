@@ -28,8 +28,8 @@ while True:
     temps.pop(-1)    # remove the last element
     temps.insert(0,float(temp)) # add element to the first position
     if len(sys.argv) ==2: # write data to file
-      f.write(str(temps[0])+","+str(temps[1])+","+str(temps[2])+","+str(temps[3])+","+str(temps[4])+","+str(temps[5])+","+str(temps[6])+","+str(temps[7])+","+str(temps[8])+","+str(temps[9])+"\n")    
-    print(temps)      
+      f.write(str(temps[0])+"\n")    
+    print(str(temps[0])+"\n")      
     plt.clf()
     plt.plot(x,temps)
     plt.pause(0.1)
